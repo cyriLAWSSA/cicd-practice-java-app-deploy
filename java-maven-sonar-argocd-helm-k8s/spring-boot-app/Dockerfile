@@ -7,7 +7,7 @@ ARG artifact=target/ spring-boot-web.jar
 
 WORKDIR /opt/app
 
-COPY ${artifact}  spring-boot-web.jar
+COPY ${artifact} app.jar
 
 # This should not be changed
 ENTRYPOINT ["java","-jar","app.jar"]
